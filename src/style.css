@@ -1,0 +1,51 @@
+input {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  width: auto;
+  margin-right: 10px;
+  background: blueviolet;
+  color: white;
+  border-radius: 25px;
+}
+input::placeholder{
+    color: white;
+}
+button {
+  cursor: pointer;
+  transition: 0.15s all ease-in-out;
+}
+.submit-button {
+  border-color: blueviolet;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+.submit-button:active,
+.close-button:active {
+  transform: scale(0.9);
+}
+
+ul {
+  margin-top: 2rem;
+}
+ul li {
+  margin: 10px 0 10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blueviolet;
+  padding: 7px 20px;
+  color: white;
+  border-radius: 25px;
+}
+
+.close-button {
+  font-size: 12px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 25px;
+}
