@@ -10,17 +10,6 @@ function Todo() {
   const [todos, setTodos] = useState([]);
   const [input, setInput] = useState("");
 
-  // Load todos from local storage when component mounts
-  useEffect(() => {
-    const storedTodos = JSON.parse(localStorage.getItem("todos"));
-    if (storedTodos.length !== 0) setTodos(storedTodos);
-  }, []);
-
-  // save todos to localstorage whenever "todos" changes
-  useEffect(() => {
-    localStorage.setItem("todos", JSON.stringify(todos));
-  }, [todos]);
-
   const handleSubmit = () => {
     setTodos(
       todos.concat({
